@@ -2,33 +2,37 @@
 body {
   margin: 0;
   font-family: "SF Pro", Arial, sans-serif;
-  background-color: #1c1c1c;
+  background-color: #0d0d0d;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow: hidden;
 }
 
 .container {
   text-align: center;
-  width: 80%;
+  width: 90%;
   max-width: 800px;
-  background-color: #222;
-  border-radius: 10px;
+  background: linear-gradient(145deg, #1c1c1c, #292929);
+  border-radius: 15px;
   padding: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 5px 20px rgba(255, 165, 0, 0.2);
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 10px;
   color: #ffa500;
+  text-shadow: 0 0 15px rgba(255, 165, 0, 0.7);
 }
 
 header p {
   margin-bottom: 20px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  color: #fff;
+  opacity: 0.8;
 }
 
 main {
@@ -40,52 +44,66 @@ main {
 }
 
 #question-title {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
 }
 
 #options-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
 button {
   padding: 10px 20px;
   font-size: 1rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
-  background-color: #ffa500;
+  background: linear-gradient(145deg, #ffa500, #e68a00);
   color: #000;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0px 5px 15px rgba(255, 165, 0, 0.4);
 }
 
 button:hover {
-  background-color: #ffbb33;
+  background: linear-gradient(145deg, #ffb733, #ff8800);
 }
 
 button:disabled {
-  background-color: #555;
+  background: linear-gradient(145deg, #444, #333);
   cursor: not-allowed;
+  color: #888;
+  box-shadow: none;
 }
 
 .option {
-  padding: 10px;
-  border: 1px solid #444;
-  border-radius: 5px;
+  padding: 15px;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #262626, #2d2d2d);
+  color: #ffa500;
+  font-size: 1.1rem;
+  text-align: center;
   cursor: pointer;
-  transition: background-color 0.3s;
+  box-shadow: 0px 5px 15px rgba(255, 165, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .option:hover {
-  background-color: #333;
+  background: linear-gradient(145deg, #333, #3b3b3b);
+  box-shadow: 0px 5px 20px rgba(255, 165, 0, 0.3);
 }
 
 .option.correct {
-  background-color: #0f0;
+  background: linear-gradient(145deg, #29a329, #33cc33);
+  color: #fff;
+  box-shadow: 0px 5px 15px rgba(0, 255, 0, 0.5);
 }
 
 .option.wrong {
-  background-color: #f00;
+  background: linear-gradient(145deg, #cc3333, #a32929);
+  color: #fff;
+  box-shadow: 0px 5px 15px rgba(255, 0, 0, 0.5);
 }
