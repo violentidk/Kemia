@@ -1,17 +1,12 @@
 [
   {
-    "question": "Mis on vee keemiline valem?",
-    "options": ["H2O", "CO2", "O2", "H2"],
-    "correct": 1
+    "question": "Mis on keemiline element?",
+    "options": ["Vesi", "Oksiid", "Aatom", "Puhas aine"],
+    "correctAnswer": 2
   },
   {
-    "question": "Mis elemendid moodustavad vee molekuli?",
-    "options": ["Vesinik ja hapnik", "Süsinik ja hapnik", "Lämmastik ja vesinik", "Raud ja hapnik"],
-    "correct": 0
-  },
-  {
-    "question": "Mis on perioodilisustabeli esimene element?",
-    "options": ["Vesinik", "Hapnik", "Liitium", "Heelium"],
-    "correct": 0
+    "question": "Kuidas nimetatakse aatomite ühendit?",
+    "options": ["Molekul", "Mikroskoop", "Keemiline reaktsioon", "Element"],
+    "correctAnswer": 0
   }
 ]
