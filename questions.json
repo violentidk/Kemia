@@ -1,0 +1,22 @@
+[
+  {
+    "question": "Millega tegeleb keemia?",
+    "options": [
+      "Ainete koostise uurimisega",
+      "Matemaatiliste mudelite loomisega",
+      "Loodusnähtuste kirjeldamisega",
+      "Inimese bioloogia uurimisega"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Mis on perioodilisustabel?",
+    "options": [
+      "Füüsika seaduste kogum",
+      "Keemiliste elementide tabel",
+      "Aatomite ehituse mudel",
+      "Molekulide koostamise juhend"
+    ],
+    "correctAnswer": 1
+  }
+]
