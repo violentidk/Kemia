@@ -11,6 +11,7 @@ function initializeQuiz(questions) {
   const questionTitle = document.getElementById("question-title");
   const optionsContainer = document.getElementById("options-container");
   const checkAnswerButton = document.getElementById("check-answer");
+  const nextButton = document.getElementById("next-button");
 
   function loadQuestion() {
     const currentQuestion = questions[currentQuestionIndex];
@@ -48,18 +49,19 @@ function initializeQuiz(questions) {
     });
 
     checkAnswerButton.disabled = true;
+    nextButton.disabled = false;
+  });
 
-    // Move to the next question
-    setTimeout(() => {
-      currentQuestionIndex++;
-      if (currentQuestionIndex < questions.length) {
-        loadQuestion();
-        checkAnswerButton.disabled = true;
-      } else {
-        document.getElementById("quiz-container").innerHTML =
-          "<h2>Test on lõppenud! Tubli töö!</h2>";
-      }
-    }, 2000);
+  nextButton.addEventListener("click", () => {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+      loadQuestion();
+      nextButton.disabled = true;
+      checkAnswerButton.disabled = true;
+    } else {
+      document.getElementById("quiz-container").innerHTML =
+        "<h2>Test on lõppenud! Tubli töö!</h2>";
+    }
   });
 
   loadQuestion();
