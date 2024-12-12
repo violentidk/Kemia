@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(135deg, #a6a4a4. ##abff94);
+  background: linear-gradient(135deg, #45474B);
   background-size: 200% 200%;
   animation: gradient-shift 8s ease infinite;
   color: #fff; /* Muudab kogu teksti vaikimisi valgeks */
