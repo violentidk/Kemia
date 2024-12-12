@@ -5,13 +5,13 @@ body {
   background: linear-gradient(135deg, #3c1053, #ad5389, #ff8200, #76b041, #2b3a67);
   background-size: 200% 200%;
   animation: gradient-shift 8s ease infinite;
-  color: #fff;
+  color: #fff; /* Muudab kogu teksti vaikimisi valgeks */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   overflow: hidden;
-  text-align: center; /* Keskenda teksti */
+  text-align: center;
 }
 
 @keyframes gradient-shift {
@@ -33,18 +33,18 @@ body {
 header h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
-  color: #ffa500;
+  color: #fff; /* Muudab teksti valgeks */
 }
 
 header p {
   margin-bottom: 20px;
   font-size: 1.2rem;
-  color: #fff;
-  opacity: 0.8;
+  color: #fff; /* Valge tekst */
+  opacity: 0.9;
 }
 
 main {
-  text-align: center; /* Keskenda ka põhiosa sisu */
+  text-align: center; /* Tsentreeri ka põhiosa sisu */
 }
 
 #quiz-container {
@@ -54,7 +54,7 @@ main {
 #question-title {
   font-size: 1.8rem;
   margin-bottom: 20px;
-  color: #fff;
+  color: #fff; /* Valge tekst */
 }
 
 #options-container {
@@ -71,7 +71,7 @@ button {
   border-radius: 10px;
   cursor: pointer;
   background: linear-gradient(145deg, #ffa500, #e68a00);
-  color: #000;
+  color: #fff; /* Valge tekst */
   transition: all 0.3s ease;
   box-shadow: 0px 5px 15px rgba(255, 165, 0, 0.3);
 }
@@ -83,7 +83,7 @@ button:hover {
 button:disabled {
   background: linear-gradient(145deg, #444, #333);
   cursor: not-allowed;
-  color: #888;
+  color: #888; /* Valgeks ei tehta, kuna see näitab keelatud olekut */
   box-shadow: none;
 }
 
@@ -91,7 +91,7 @@ button:disabled {
   padding: 15px;
   border-radius: 10px;
   background: #262626;
-  color: #ffa500;
+  color: #fff; /* Valge tekst */
   font-size: 1.1rem;
   text-align: center;
   cursor: pointer;
@@ -108,12 +108,12 @@ button:disabled {
 
 .option.correct {
   background: #29a329;
-  color: #fff;
+  color: #fff; /* Valge tekst */
   box-shadow: 0px 3px 10px rgba(0, 255, 0, 0.3);
 }
 
 .option.wrong {
   background: #cc3333;
-  color: #fff;
+  color: #fff; /* Valge tekst */
   box-shadow: 0px 3px 10px rgba(255, 0, 0, 0.3);
 }
