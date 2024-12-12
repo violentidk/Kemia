@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: "SF Pro", Arial, sans-serif;
-  background: linear-gradient(135deg, #3c1053, #ad5389, #ff8200, #76b041, #2b3a67);
+  background: linear-gradient(135deg, #45EBA5, #21ABA5, #1D566E, #76b041, #163A5F);
   background-size: 200% 200%;
   animation: gradient-shift 8s ease infinite;
   color: #fff; /* Muudab kogu teksti vaikimisi valgeks */
