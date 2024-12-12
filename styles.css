@@ -2,30 +2,38 @@
 body {
   margin: 0;
   font-family: "SF Pro", Arial, sans-serif;
-  background-color: #0d0d0d;
+  background: linear-gradient(135deg, #3c1053, #ad5389, #ff8200, #76b041, #2b3a67);
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   overflow: hidden;
+  text-align: center; /* Keskenda teksti */
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .container {
-  text-align: center;
+  text-align: center; /* Tsentreeri kõik elemendid */
   width: 90%;
   max-width: 800px;
-  background: linear-gradient(145deg, #1c1c1c, #292929);
+  background: #1e1e1e;
   border-radius: 15px;
   padding: 20px;
-  box-shadow: 0px 5px 20px rgba(255, 165, 0, 0.2);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
   color: #ffa500;
-  text-shadow: 0 0 15px rgba(255, 165, 0, 0.7);
 }
 
 header p {
@@ -36,24 +44,24 @@ header p {
 }
 
 main {
-  text-align: left;
+  text-align: center; /* Keskenda ka põhiosa sisu */
 }
 
 #quiz-container {
-  margin: 20px 0;
+  margin: 20px auto;
 }
 
 #question-title {
   font-size: 1.8rem;
   margin-bottom: 20px;
   color: #fff;
-  text-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
 }
 
 #options-container {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  align-items: center; /* Tsentreeri nupud horisontaalselt */
 }
 
 button {
@@ -65,7 +73,7 @@ button {
   background: linear-gradient(145deg, #ffa500, #e68a00);
   color: #000;
   transition: all 0.3s ease;
-  box-shadow: 0px 5px 15px rgba(255, 165, 0, 0.4);
+  box-shadow: 0px 5px 15px rgba(255, 165, 0, 0.3);
 }
 
 button:hover {
@@ -82,28 +90,30 @@ button:disabled {
 .option {
   padding: 15px;
   border-radius: 10px;
-  background: linear-gradient(145deg, #262626, #2d2d2d);
+  background: #262626;
   color: #ffa500;
   font-size: 1.1rem;
   text-align: center;
   cursor: pointer;
-  box-shadow: 0px 5px 15px rgba(255, 165, 0, 0.1);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
+  width: 100%; /* Nupud võtavad sama laiuse */
+  max-width: 400px; /* Maksimaalne laius */
 }
 
 .option:hover {
-  background: linear-gradient(145deg, #333, #3b3b3b);
-  box-shadow: 0px 5px 20px rgba(255, 165, 0, 0.3);
+  background: #333333;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 .option.correct {
-  background: linear-gradient(145deg, #29a329, #33cc33);
+  background: #29a329;
   color: #fff;
-  box-shadow: 0px 5px 15px rgba(0, 255, 0, 0.5);
+  box-shadow: 0px 3px 10px rgba(0, 255, 0, 0.3);
 }
 
 .option.wrong {
-  background: linear-gradient(145deg, #cc3333, #a32929);
+  background: #cc3333;
   color: #fff;
-  box-shadow: 0px 5px 15px rgba(255, 0, 0, 0.5);
+  box-shadow: 0px 3px 10px rgba(255, 0, 0, 0.3);
 }
